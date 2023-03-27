@@ -1,9 +1,9 @@
 // let main = document.getElementById("main");
 
-// main.style.backgroundImage = "url('images/index1.jpeg')";
+// main.style.backgroundImage = "url('images/index2.jpeg')";
 // main.style.backgroundSize = "cover";
 
-let imageSection = document.getElementById("main");
+let imageSection = document.getElementById("mainImg");
 let imagesArray = [];
 
 let image1 = document.createElement("img");

@@ -6,6 +6,7 @@ header {
   display: flex;
   flex-direction: column;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
   font-family: "Quicksand", sans-serif;
 }
 #navUl {
@@ -25,10 +26,13 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: absolute;
+  position: sticky;
 }
 header h1 {
   text-align: center;
   margin: 0px;
+  font-weight: bolder;
 }
 #booknow {
   padding-right: 5%;
@@ -37,9 +41,28 @@ header h1 {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
 }
-#main img {
+#mainImg img {
   width: 100%;
   height: 500px;
+}
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(246, 248, 249, 0.9) 0px 8px 24px;
+  text-shadow: 0 0 10px #ffffff;
+  border-radius: 10px;
+  font-family: "Josefin Sans", sans-serif;
+
+  padding: 5% 10%;
 }
 /* footer*/
 a {
@@ -88,4 +111,27 @@ a {
   font-size: 20px;
   background: #ffffff;
   transform: rotate(0deg);
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#noBorderFooterEl {
+  border-right: none;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+}
+.details p {
+  color: gray;
+  padding: 1%;
+  border-right: 1px solid gray;
 }
