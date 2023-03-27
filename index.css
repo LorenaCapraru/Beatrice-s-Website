@@ -1,0 +1,37 @@
+body {
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-family: "Quicksand", sans-serif;
+}
+#navUl {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0px;
+  padding-left: 5%;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header h1 {
+  text-align: center;
+  margin: 0px;
+}
+#booknow {
+  padding-right: 5%;
+  border: none;
+  background: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
