@@ -16,7 +16,7 @@ image2.src = "images/index2.jpeg";
 imagesArray.push(image2);
 
 let image3 = document.createElement("img");
-image3.src = "images/index3.webp";
+image3.src = "images/index3.jpeg";
 imagesArray.push(image3);
 
 let count = 0;
