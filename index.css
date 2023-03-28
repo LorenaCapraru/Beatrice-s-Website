@@ -1,7 +1,6 @@
 body {
   margin: 0px;
 }
-
 header {
   display: flex;
   flex-direction: column;
@@ -13,12 +12,19 @@ header {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   list-style: none;
   padding: 0px;
   padding-left: 5%;
   font-weight: bolder;
+}
+#navUl li:hover {
+  font-size: 17px;
+}
+#navUl img {
+  width: 10%;
+  padding-left: 0px;
 }
 nav a {
   color: rgb(76, 76, 76);
@@ -30,9 +36,11 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
   position: sticky;
 }
 header h1 {
+  padding-top: 1%;
   text-align: center;
   margin: 0px;
   color: rgb(76, 76, 76);
@@ -61,7 +69,7 @@ header h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: rgba(243, 237, 237, 0.7);
+  background-color: rgba(243, 237, 237, 0.9);
   box-shadow: rgba(246, 248, 249, 0.9) 0px 8px 24px;
   text-shadow: 0 0 10px rgb(98, 98, 98);
   border-radius: 10px;
@@ -119,7 +127,6 @@ a {
 }
 
 footer {
-  position: absolute;
   bottom: 0px;
   width: 100%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -147,4 +154,53 @@ footer {
   color: gray;
   padding: 5px;
   border-right: 1px solid gray;
+}
+
+/*feedback*/
+.feedbackSection h1 {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+.divF {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
+}
+
+.feedbackContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family: "Quicksand", sans-serif;
+  padding: 5%;
+}
+.feedBackName {
+  font-size: smaller;
+}
+
+/*arrows*/
+
+.right {
+  height: 30px;
+  width: 30px;
+  background: none;
+  border: solid gray;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  height: 30px;
+  width: 30px;
+  background: none;
+  border: solid gray;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
