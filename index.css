@@ -18,12 +18,13 @@ header {
   padding: 0px;
   padding-left: 5%;
   font-weight: bolder;
+  margin: 0px;
 }
 #navUl li:hover {
   font-size: 17px;
 }
 #navUl img {
-  width: 10%;
+  width: 9%;
   padding-left: 0px;
 }
 nav a {
@@ -52,6 +53,7 @@ header h1 {
   background: none;
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
+  color: rgba(202, 75, 75, 0.5);
   list-style: none;
 }
 #mainImg img {
@@ -209,21 +211,100 @@ footer {
 .treatments {
   font-family: "Quicksand", sans-serif;
   text-align: center;
+  background-color: rgba(202, 75, 75, 0.5);
+  padding: 2% 5%;
+  color: white;
 }
 .treatmentsContainer {
   padding: 5%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
 }
 
 .treatmentCard img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  box-shadow: 0px 0px 57px -22px rgba(202, 75, 75, 0.5);
 }
 
-.treatmentCard button {
+.treatmentCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  justify-content: space-between;
+}
+
+/* .treatmentCard button {
   border: none;
-  deco
+  padding: 10px 20px;
+  color: rgba(202, 75, 75, 0.5);
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid rgba(202, 75, 75, 0.5);
+  font-size: 15px;
+}
+
+.treatmentCard button:hover {
+  background-color: rgba(202, 75, 75, 0.5);
+  border: none;
+  color: white; 
+}*/
+
+/* CSS */
+.treatmentCard button {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(202, 75, 75, 0.5);
+  border-radius: 0.25rem;
+  box-shadow: rgba(202, 75, 75, 0.5) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(202, 75, 75, 0.5);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.treatmentCard button:hover,
+.treatmentCard button:focus {
+  border-color: rgba(202, 75, 75, 0.5);
+  box-shadow: rgba(202, 75, 75, 0.5) 0 4px 12px;
+  color: rgba(202, 75, 75, 0.5);
+}
+
+.treatmentCard button:hover {
+  transform: translateY(-1px);
+}
+
+.treatmentCard button:active {
+  background-color: #f0f0f1;
+  border-color: rgba(202, 75, 75, 0.5);
+  box-shadow: rgba(202, 75, 75, 0.5) 0 2px 4px;
+  color: rgba(202, 75, 75, 0.5);
+  transform: translateY(0);
+}
+
+.shortDescription {
+  font-weight: bolder;
+  font-size: 18px;
 }
