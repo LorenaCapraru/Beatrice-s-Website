@@ -204,3 +204,26 @@ footer {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
+
+/* treatments*/
+.treatments {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+.treatmentsContainer {
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.treatmentCard img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.treatmentCard button {
+  border: none;
+  deco
+}
